@@ -1,0 +1,18 @@
+
+@squid:S1068")Remove this unused "OTHER" private field.(Ñø¨
+?squid:S1068"(Remove this unused "SAVE" private field.(¼çşø
+Nsquid:S1068*"2Remove this unused "MODULES_DISJOB" private field.(ÅŞæØúÿÿÿÿ
+Gsquid:S10689"0Remove this unused "MODULES_GATE" private field.(ÔĞ÷‰
+Qsquid:S1068>":Remove this unused "OPERATION_TYPE_UNKNOWN" private field.(ƒÖ¹€
+Vsquid:S1118":Add a private constructor to hide the implicit public one.(°Å°Åùÿÿÿÿ
+Hsquid:S10684"1Remove this unused "MODULES_SPARE" private field.(„²±§
+Hsquid:S1068%"2Remove this unused "MODULES_DEVICE" private field.(¼ËÅ
+
+Isquid:S1068/"3Remove this unused "MODULES_MESSAGE" private field.(ë¹’z
+Usquid:S1068M"9Remove this unused "OPERATION_TYPE_MOBILE" private field.(„ÑÂÕùÿÿÿÿ
+Usquid:S1068R"9Remove this unused "OPERATION_TYPE_OTHERS" private field.(Î§¾ûüÿÿÿÿ
+Hsquid:S1068 "1Remove this unused "MODULES_ADMIN" private field.(ÛĞº
+=squid:S1068"'Remove this unused "DEL" private field.(¡‹ŞX
+Lsquid:S1068C"5Remove this unused "OPERATION_TYPE_PC" private field.(êö Ö
+?squid:S1068"(Remove this unused "EDIT" private field.(ÆÇ”
+Ssquid:S1068H"7Remove this unused "OPERATION_TYPE_FLAT" private field.(ÄÄÇÎøÿÿÿÿ

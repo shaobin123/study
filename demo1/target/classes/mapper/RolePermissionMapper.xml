@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.demo.mapper.RolePermissionMapper">
+  <resultMap id="BaseResultMap" type="com.example.demo.model.RolePermission">
+    <!--@mbg.generated-->
+    <result column="id" jdbcType="VARCHAR" property="id" />
+    <result column="role_id" jdbcType="VARCHAR" property="roleId" />
+    <result column="permision_id" jdbcType="VARCHAR" property="permisionId" />
+  </resultMap>
+  <insert id="insert" parameterType="com.example.demo.model.RolePermission">
+    <!--@mbg.generated-->
+    insert into role_permission (id, role_id, permision_id
+      )
+    values (#{id,jdbcType=VARCHAR}, #{roleId,jdbcType=VARCHAR}, #{permisionId,jdbcType=VARCHAR}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.example.demo.model.RolePermission">
+    <!--@mbg.generated-->
+    insert into role_permission
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="roleId != null">
+        role_id,
+      </if>
+      <if test="permisionId != null">
+        permision_id,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=VARCHAR},
+      </if>
+      <if test="roleId != null">
+        #{roleId,jdbcType=VARCHAR},
+      </if>
+      <if test="permisionId != null">
+        #{permisionId,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+</mapper>

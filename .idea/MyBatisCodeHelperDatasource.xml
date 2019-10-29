@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MyBatisCodeHelperDatasource">
+    <option name="projectProfile">
+      <ProjectProfile>
+        <option name="generateService" value="true" />
+        <option name="generateServiceInterface" value="true" />
+        <option name="javaMapperPackage" value="com.example.demo.mapper" />
+        <option name="javaMapperPath" value="$PROJECT_DIR$/demo1/src/main/java" />
+        <option name="javaModelPackage" value="com.example.demo.model" />
+        <option name="javaModelPath" value="$PROJECT_DIR$/demo1/src/main/java" />
+        <option name="lastDatabaseCrudChooseModuleName" value="demo1" />
+        <option name="moduleNameToPackageAndPathMap">
+          <map>
+            <entry key="demo1">
+              <value>
+                <UserPackageAndPathInfoByModule>
+                  <option name="javaMapperPackage" value="com.example.demo.mapper" />
+                  <option name="javaMapperPath" value="$PROJECT_DIR$/demo1/src/main/java" />
+                  <option name="javaModelPacakge" value="com.example.demo.model" />
+                  <option name="javaModelPath" value="$PROJECT_DIR$/demo1/src/main/java" />
+                  <option name="javaServiceInterfacePackage" value="com.example.demo.Service" />
+                  <option name="javaServiceInterfacePath" value="$PROJECT_DIR$/demo1/src/main/java" />
+                  <option name="javaServicePackage" value="com.example.demo.Service.impl" />
+                  <option name="javaServicePath" value="$PROJECT_DIR$/demo1/src/main/java" />
+                  <option name="xmlPackage" value="mapper" />
+                  <option name="xmlPath" value="$PROJECT_DIR$/demo1/src/main/resources" />
+                </UserPackageAndPathInfoByModule>
+              </value>
+            </entry>
+          </map>
+        </option>
+        <option name="tableGenerateConfigs">
+          <map>
+            <entry key="test:city">
+              <value>
+                <TableGenerateConfig>
+                  <option name="javaModelName" value="City" />
+                  <option name="moduleName" value="demo1" />
+                  <option name="useActualColumnName" value="false" />
+                </TableGenerateConfig>
+              </value>
+            </entry>
+            <entry key="test:customer">
+              <value>
+                <TableGenerateConfig>
+                  <option name="javaModelName" value="Customer" />
+                  <option name="moduleName" value="demo1" />
+                  <option name="useActualColumnName" value="false" />
+                </TableGenerateConfig>
+              </value>
+            </entry>
+            <entry key="test:permission">
+              <value>
+                <TableGenerateConfig>
+                  <option name="javaModelName" value="Permission" />
+                  <option name="moduleName" value="demo1" />
+                  <option name="useActualColumnName" value="false" />
+                </TableGenerateConfig>
+              </value>
+            </entry>
+            <entry key="test:role">
+              <value>
+                <TableGenerateConfig>
+                  <option name="javaModelName" value="Role" />
+                  <option name="moduleName" value="demo1" />
+                  <option name="useActualColumnName" value="false" />
+                </TableGenerateConfig>
+              </value>
+            </entry>
+            <entry key="test:role_permission">
+              <value>
+                <TableGenerateConfig>
+                  <option name="javaModelName" value="RolePermission" />
+                  <option name="moduleName" value="demo1" />
+                  <option name="useActualColumnName" value="false" />
+                </TableGenerateConfig>
+              </value>
+            </entry>
+            <entry key="test:t_user">
+              <value>
+                <TableGenerateConfig>
+                  <option name="javaModelName" value="TUser" />
+                  <option name="moduleName" value="demo1" />
+                  <option name="useActualColumnName" value="false" />
+                </TableGenerateConfig>
+              </value>
+            </entry>
+            <entry key="test:user">
+              <value>
+                <TableGenerateConfig>
+                  <option name="generatedKey" value="id" />
+                  <option name="javaModelName" value="User" />
+                  <option name="moduleName" value="demo1" />
+                  <option name="useActualColumnName" value="false" />
+                </TableGenerateConfig>
+              </value>
+            </entry>
+            <entry key="test:user_role">
+              <value>
+                <TableGenerateConfig>
+                  <option name="javaModelName" value="UserRole" />
+                  <option name="moduleName" value="demo1" />
+                  <option name="useActualColumnName" value="false" />
+                </TableGenerateConfig>
+              </value>
+            </entry>
+          </map>
+        </option>
+        <option name="xmlMapperPackage" value="mapper" />
+        <option name="xmlMapperPath" value="$PROJECT_DIR$/demo1/src/main/resources" />
+      </ProjectProfile>
+    </option>
+  </component>
+</project>

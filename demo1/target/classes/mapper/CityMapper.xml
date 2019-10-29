@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.demo.mapper.CityMapper">
+  <resultMap id="BaseResultMap" type="com.example.demo.domain.City">
+    <!--@mbg.generated-->
+    <id column="city_id" jdbcType="VARCHAR" property="cityId" />
+    <result column="city_name" jdbcType="VARCHAR" property="cityName" />
+    <result column="remark" jdbcType="VARCHAR" property="remark" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    city_id, city_name, remark
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.String" resultMap="BaseResultMap">
+    <!--@mbg.generated-->
+    select 
+    <include refid="Base_Column_List" />
+    from city
+    where city_id = #{cityId,jdbcType=VARCHAR}
+  </select>
+  <!--删除(批量)-->
+  <delete id="deleteByPrimaryKey" parameterType="Dto.citydto">
+
+    delete from city
+    where city_id in
+     <foreach close=")" collection="cityIds" item="item" open="(" separator=", ">
+    #{item,jdbcType=VARCHAR}
+   </foreach>
+
+  </delete>
+  <insert id="insert" parameterType="com.example.demo.domain.City">
+    insert into city (city_id, city_name, remark
+      )
+    values (#{cityId,jdbcType=VARCHAR}, #{cityName,jdbcType=VARCHAR}, #{remark,jdbcType=VARCHAR}
+      )
+  </insert>
+  <!--可选插入-->
+  <insert id="insertSelective" parameterType="com.example.demo.domain.City">
+    <!--@mbg.generated-->
+    insert into city
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="cityId != null">
+        city_id,
+      </if>
+      <if test="cityName != null">
+        city_name,
+      </if>
+      <if test="remark != null">
+        remark,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="cityId != null">
+        #{cityId,jdbcType=VARCHAR},
+      </if>
+      <if test="cityName != null">
+        #{cityName,jdbcType=VARCHAR},
+      </if>
+      <if test="remark != null">
+        #{remark,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <!--可选修改-->
+  <update id="updateByPrimaryKeySelective" parameterType="com.example.demo.domain.City">
+    <!--@mbg.generated-->
+    update city
+    <set>
+      <if test="cityName != null">
+        city_name = #{cityName,jdbcType=VARCHAR},
+      </if>
+      <if test="remark != null">
+        remark = #{remark,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where city_id = #{cityId,jdbcType=VARCHAR}
+  </update>
+  <!--根据id编辑-->
+  <update id="updateByPrimaryKey" parameterType="com.example.demo.domain.City">
+    <!--@mbg.generated-->
+    update city
+    set city_name = #{cityName,jdbcType=VARCHAR},
+      remark = #{remark,jdbcType=VARCHAR}
+    where city_id = #{cityId,jdbcType=VARCHAR}
+  </update>
+  <!--列表查询-->
+  <select id="getAll" resultMap="BaseResultMap">
+    select * from city order by city_id
+  </select>
+</mapper>

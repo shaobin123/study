@@ -1,0 +1,8 @@
+
+[squid:UselessImportCheck"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ8†ùÉÉ-
+^squid:UselessImportCheck".Remove this unused import 'java.util.HashMap'.(™˜”€ùÿÿÿÿ8†ùÉÉ-
+rsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(´Šêô
+psquid:S00117b"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(åÒÄµ8½¶¬–É-
+Zsquid:UselessImportCheck"*Remove this unused import 'java.util.Map'.(¼è½Òşÿÿÿÿ8†ùÉÉ-
+Hsquid:S3457A"%String contains no format specifiers.(õ˜Ü¥øÿÿÿÿ8¨àĞ¦È-
+^squid:S3457;"AFormat specifiers should be used instead of string concatenation.(Úôœ28òïÇ¦È-

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/demo1" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demo1/src/main/java/com/example/demo/Configuration" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demo1/src/main/java/com/example/demo/Service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demo1/src/main/java/com/example/demo/controller" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demo1/src/main/resources/mapper" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/jpademo" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/jpademo/src/main/resources/application.yml" charset="GBK" />
+    <file url="PROJECT" charset="GBK" />
+  </component>
+</project>
